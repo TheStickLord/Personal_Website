@@ -1,0 +1,57 @@
+@font-face {
+  font-family: codingFont;
+  src: url(../CommodorePixelizedv1.2.ttf);
+}
+
+body {
+  background-color: black;
+}
+
+.welcomeImage {
+  display: block;
+  margin-top: 6rem;
+  width: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  animation: slowFadeIn 2s;
+}
+
+.welcomeImage:hover {
+  cursor: pointer;
+}
+
+@keyframes slowFadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+p {
+  color: greenyellow;
+  font-family: "codingFont";
+}
+
+.overlay {
+  margin-top: -6rem;
+  height: 100%;
+  width: 100.5%;
+  margin-left: -1rem;
+  opacity: 0.1;
+  position: absolute;
+  background-image: url(../tumblr_msf8h74Qem1r715lno1_500.gif);
+  z-index: -1;
+}
+
+.flashingIcon {
+  display: inline-block;
+}
+
+.externalWebsite {
+  cursor: pointer;
+}

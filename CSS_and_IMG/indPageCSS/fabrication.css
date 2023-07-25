@@ -1,0 +1,68 @@
+@font-face {
+  font-family: bannerFont;
+  src: url(../Italico_700.ttf);
+}
+
+body {
+  background-color: white;
+}
+
+.startupLogo:hover {
+  cursor: pointer;
+}
+
+.startupLogo {
+  padding-top: 2.5%;
+  background-size: cover;
+  height: 10rem;
+  width: min-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+}
+
+.fabLogo {
+  height: 14%;
+  margin-top: -4px;
+  animation: sizeIncrease 3s;
+}
+
+h1 {
+  border-bottom-style: solid;
+  border-bottom-width: 7.5px;
+  border-bottom-color: red;
+  margin-top: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-left: -8px;
+  margin-right: -8px;
+  font-family: bannerFont;
+}
+
+.divMain {
+  width: 100%;
+  height: 10rem;
+  border-color: blue;
+  border-style: dashed;
+}
+
+@keyframes sizeIncrease {
+  0% {
+    opacity: 0;
+    height: 0;
+    margin-top: 25px;
+    border-radius: 5rem;
+  }
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    border-radius: 0;
+    margin-top: -4px;
+    height: 14%;
+  }
+}

@@ -1,0 +1,180 @@
+@font-face {
+  font-family: welcomeFont;
+  src: url(./reservoirdogs.ttf);
+}
+
+@font-face {
+  font-family: lilFont;
+  src: url(./Cornerstone.ttf);
+}
+
+body {
+  margin: 0;
+  margin-right: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../CSS_and_IMG/Images/PXL_20221124_000521673.jpg");
+  background-size: cover;
+  background-color: #486a85;
+}
+
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  margin-top: -1rem;
+  font-weight: 600;
+}
+
+/*-------------------vBullhonky Animations For buttons and shitv---------------------------*/
+.buttonContTop {
+  margin-left: auto;
+  margin-right: auto;
+  top: 1rem;
+  height: 5rem;
+  border-radius: 1rem;
+  width: 98%;
+  position: sticky;
+  animation: buttonContTop 0.5s;
+}
+
+@keyframes buttonContTop {
+  0% {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.BCT_hasScrolled {
+  background-color: rgba(255, 255, 255, 0.5);
+  animation: hasScrolled 0.5s;
+}
+
+@keyframes hasScrolled {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.buttonHasScrolled {
+  animation: buttonHasScrolled 0.5s;
+  color: black;
+  border-color: black;
+  border-radius: 1rem;
+  height: 2rem;
+  display: inline;
+  margin: 0 auto;
+  float: right;
+  margin-right: 1rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  border-style: solid;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.buttonHasScrolled:hover {
+  background-color: black;
+  color: white;
+  border-color: rgba(255, 255, 255, 0.786);
+}
+
+@keyframes buttonHasScrolled {
+  0% {
+    color: white;
+    border-color: white;
+  }
+  100% {
+    color: black;
+    border-color: black;
+  }
+}
+
+.button {
+  background: none;
+  color: white;
+  border-color: white;
+  border-radius: 1rem;
+  height: 2rem;
+  display: inline;
+  margin: 0 auto;
+  float: right;
+  margin-right: 1rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  border-style: solid;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  animation: button 0.5s;
+}
+
+@keyframes button {
+  0% {
+    color: black;
+    border-color: black;
+  }
+  100% {
+    color: white;
+    border-color: white;
+  }
+}
+
+.button:hover {
+  background-color: white;
+  color: #486a85;
+  border-color: #486a85;
+}
+
+/*-------------------^Bullhonky Animations For buttons and shit^---------------------------*/
+
+.logoWhite {
+  margin-top: 0.25rem;
+  float: left;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.welcomeText {
+  font-family: "welcomeFont";
+  text-align: center;
+  color: black;
+}
+
+.welcomeDiv {
+  margin-top: 13rem;
+}
+
+.bigText {
+  font-size: 301%;
+}
+
+.midText {
+  font-size: 175%;
+}
+
+.mainInfoWelcomeDiv {
+  border-style: double;
+  margin-bottom: 2rem;
+  border-width: 0.5rem;
+  border-radius: 1rem;
+  border-color: #486a85;
+  padding: 3rem;
+  margin-top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  background-image: url("./Images/original_f16bfa89-6529-4005-b7d4-aefaaa2dc68a_PXL_20220610_204514818.jpg");
+}
+
+.textButton {
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.textButton:hover {
+  opacity: 60%;
+}

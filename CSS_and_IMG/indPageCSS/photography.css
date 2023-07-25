@@ -1,0 +1,119 @@
+body {
+  background-image: url("../../CSS_and_IMG/Images/PXL_20221124_202705199.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0;
+}
+
+:root {
+  --screenWidth: 0;
+}
+
+.introText {
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px black;
+}
+
+.scaleCheckSum {
+  height: 110%;
+  width: 100%;
+  background-color: brown;
+  position: absolute;
+}
+
+.logo {
+  animation: fadeInLong 2s;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.helloHolder {
+  position: sticky;
+  margin-top: 10%;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 2rem;
+  height: 5rem;
+  width: 50%;
+  margin-left: 25%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.25rem;
+  bottom: 0;
+  top: 0;
+  animation: widthDecrease 1s;
+}
+
+.helloHolderWidthIncrease {
+  margin-left: 0;
+  width: 100%;
+  border-radius: 0rem;
+  animation: widthIncrease 1s;
+}
+
+@keyframes widthDecrease {
+  0% {
+    border-radius: 0rem;
+
+    margin-left: 0%;
+    width: 100%;
+  }
+  100% {
+    border-radius: 2rem;
+    margin-left: 25%;
+    width: 50%;
+  }
+}
+
+@keyframes widthIncrease {
+  0% {
+    border-radius: 2rem;
+    margin-left: 25%;
+    width: 50%;
+  }
+  100% {
+    border-radius: 0rem;
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.hello {
+  display: block;
+  text-align: center;
+  font-family: welcomeFontBoi;
+  color: white;
+}
+
+.downsize {
+  font-size: 150%;
+}
+
+@font-face {
+  font-family: welcomeFontBoi;
+  src: url(../Italico_700.ttf);
+}
+
+.images {
+  margin-top: var(--screenWidth);
+  width: 100%;
+  background-image: url(../Images/photoTexture.jpg);
+  background-repeat: repeat;
+  box-shadow: -2px -2px 5px burlywood;
+  padding-bottom: 1rem;
+}
+
+.imgScale {
+  height: 40rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 10px black;
+}
